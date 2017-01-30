@@ -1,0 +1,64 @@
+	 <!DOCTYPE html>
+	
+	<html>
+	<head>
+	<meta charset="utf-8" /> 
+	<link rel="stylesheet" href="style.css">
+	<script type="text/javascript">
+		function FadeIn(){
+			document.getElementById('seccion').style.display ='inherit';
+			}
+
+		
+		//XMLHttpRequest makes sending HTTP requests very easy. You simply create an instance of the object, open a URL, and send the request.	
+		function request(){
+			var xhttp = new XMLHttpRequest(); // Constructor
+			// Un controlador de evento es llamado cuando el readystate cambia el atributo
+  			xhttp.onreadystatechange = function() {
+  			// 4 	DONE 	The operation is complete.
+  			// 200 DONE  The XMLHttpRequest.status property returns the numerical status code of the response of the XMLHttpRequest	
+    		if (this.readyState == 4 && this.status == 200) {
+      			document.getElementById("boton").innerHTML =
+      		this.responseText;  //Deberia poner un p y a ese ponerle un id, para llamar al evento? 
+    }
+  	};
+  	xhttp.open("GET", "random.json", true); //initializes a request
+  	xhttp.send(); // sends the request.
+			}
+	</script>
+	
+	<title>Topic 1</title>
+	
+	</head>
+	
+
+	<h1>JavaScript, and DOM APIs </h1>
+	<body onload="FadeIn()">
+	 
+	<section  id="seccion" hidden>
+	     <p>Hello World !</p>
+	</section> 
+		
+
+	<input type="button" id="boton" value="Request" onclick="request()">
+
+
+	
+	<section  id="seccion1">
+	     <p>Esta es la sección visible número 1</p>
+	</section> 
+	
+
+	<section  id="seccion2" >
+	     <p>Esta es la sección visible número 2</p>
+	</section> 
+	
+	
+
+
+
+	</body>
+
+	</html> 
+
+
