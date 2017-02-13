@@ -3,7 +3,7 @@
 		
 		
 			
-
+			$scope.todo =[];
 			$scope.todo = localStorageService.get("localStorageService");
 
 			

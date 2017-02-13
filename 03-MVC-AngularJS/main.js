@@ -2,7 +2,7 @@
 
 let myapp = angular.module('myapp', ["ngRoute",
                                      "LocalStorageModule",
-                                     "primerCtrl","ngStorage","detalleCtrl"
+                                     "primerCtrl","ngStorage","detalleCtrl","editarCtrl"
                                      ]);
 
 
@@ -16,11 +16,11 @@ myapp.config(function($routeProvider) {
         templateUrl : "detalles.html",
         controller : "detalleController"
     })
-    // ,"editarCtrl"
-    //.when("/editar/:movie", {
-    //     templateUrl : "editar.html",
-    //     controller : "editarController"
-    // })
+     
+    .when("/editar/:movie", {
+        templateUrl : "editar.html",
+        controller : "editarController"
+    })
     .otherwise({redirectTo:'/'});
 });
 
