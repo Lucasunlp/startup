@@ -1,0 +1,46 @@
+<link type="text/css" rel="stylesheet" href="estilo.css">
+
+<div ng-controller="primerController">
+
+<!-- 
+   <!--  <div class="div-content" >
+        <!-- Movie list with info -->
+        <div class = "left-content">
+            <div class="div-title">
+                <h1>Listado de Películas</h1>
+            </div>
+         
+            <div class="div-movies-data">
+                <ul ng-repeat="x in todo">
+                    <li>
+                        <strong>Title:</strong>   {{x.nombre}}
+                          <a href="#/detalles/{{$index}}"> Ver detalles</a>
+                          <a href="#/editar/{{$index}}"> Editar</a>
+                        <input type="checkbox" ng-model="x.newAct"> <span ng-bind="x.todo"></span>
+
+           
+                    </li>
+                   
+                </ul>
+
+                <p><button ng-click="remove()">Eliminar el/los seleccionado/s</button></p>
+            </div>
+
+           
+        </div>
+
+      
+    </div>
+
+    <form ng-submit="addAct()">
+        Ingrese el nombre de la pelicula:
+        <input type="text" ng-model="newAct.nombre" >
+        <br><br> 
+         Ingrese la duración de la pelicula:
+        <input type="text" ng-model="newAct.duracion" >
+        <br><br>
+        <input type="submit" value="Guarda nueva pelicula">
+        
+
+    </form>   
+</div>

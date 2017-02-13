@@ -1,0 +1,41 @@
+    <!DOCTYPE html>
+    <html ng-app="myapp">
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script> 
+         <script src="https://code.angularjs.org/1.6.1/angular-route.js"></script> 
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/ngStorage/0.3.11/ngStorage.js"></script>
+
+    
+        
+    	<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    	<title>Página Principal</title>
+    
+        <!-- App modules -->
+
+        <script src="primerController.js"></script>
+        <script src="detalleController.js"></script>
+      <!--   <script src="editarController.js"></script> -->
+        <script src="angular-local-storage.min.js"></script>
+        <script src="main.js"></script> 
+      
+
+
+
+        <!-- CSS stylesheet -->
+        <link type="text/css" rel="stylesheet" href="estilo.css">
+
+
+    </head>
+
+    <body ng-app>
+
+    <div ng-view >
+        
+    </div>
+
+
+
+
+    </body>
+</html>

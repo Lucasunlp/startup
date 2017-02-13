@@ -1,0 +1,22 @@
+body {
+	margin-top: 70px;
+	background-color: Gainsboro;
+	font-family: Helvetica;
+	text-align: center;
+}
+
+h1 {
+	text-shadow: 2px 2px #FF0000;
+	color: black;
+	font-family: Helvetica;
+	align-content: center;
+	text-align: center;
+}
+
+p {
+	
+	color: black;
+	font-family: cursive;
+	align-content: center;
+	text-align: center;
+}
