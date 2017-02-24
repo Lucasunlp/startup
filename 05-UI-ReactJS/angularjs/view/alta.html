@@ -1,0 +1,18 @@
+
+<h1>Add Todo</h1>
+
+
+ <div ng-controller="guardarController">
+        <form ng-submit="addTodo()">
+            <input id="new-todo" placeholder="Ingreso nombre del ToDo" ng-model="newTodo.nombre" ng-disabled="saving" autofocus>
+          </form> 
+          <form id="todo-form" ng-submit="addTodo()">
+             <input id="new-todo2" placeholder="Ingrese nombre de Autor" ng-model="newTodo.autor" ng-disabled="saving" autofocus>  <!--Esto agregue yo!-->
+          </form>
+          <!--FALTA AGREGAR DESCRIPCION EN EL CONTROLLER TODOCTRL O ALTACONTROLLER  -->
+         <!--   <form id="todo-form" ng-submit="addTodo()">
+             <input id="new-todo2" placeholder="Ingrese una descripcion" ng-model="newTodo.descripcion" ng-disabled="saving" autofocus>  
+          </form>
+ -->
+        <a href="http://localhost:8080/globant2017/Globant/Globant/prueba/examples/angularjs/#/">Volver al home</a>
+</div>

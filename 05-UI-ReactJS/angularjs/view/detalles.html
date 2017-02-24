@@ -1,0 +1,58 @@
+<link rel="stylesheet" href="node_modules/todomvc-common/base.css">
+<link rel="stylesheet" href="node_modules/todomvc-app-css/index.css">
+
+								
+
+<h2>Detalles del ToDo seleccionado</h2>
+<br>
+<div ng-controller="detalleController">
+<div class="det">
+<head>
+
+<style>
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+<table>
+  <tr>
+    <th>Nombre</th>
+    <th>Autor</th>
+    <th>Fecha</th>
+    <th>Descripcion</th>
+    <th>Importancia</th>
+    
+
+  </tr>
+  <tr>
+    <td>{{nombre}}</td>
+    <td>{{autor}}</td>
+    <td>{{fecha}}</td>
+    <td>{{desc}}</td>
+    <td>{{importance}}</td>
+
+  </tr>
+  
+</table>
+</body>
+<br><br>
+</div>
+<div class="bot">
+<a href="#/" class="myButton">Volver al home</a>	
+</div>
